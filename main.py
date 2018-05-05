@@ -105,7 +105,7 @@ loop = asyncio.get_event_loop()
 # loop.set_debug(enabled=True)
 ws_handler = WS_Handler(loop=loop)
 
-ws_server = websockets.serve(ws_handler, host='localhost', port=8765, loop=loop)
+ws_server = websockets.serve(ws_handler, host='0.0.0.0', port=8765, loop=loop)
 future = asyncio.ensure_future(ws_server)
 
 loop.run_forever()

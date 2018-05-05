@@ -2,6 +2,7 @@ FROM python:latest
 
 ADD ./requirements.txt /back/requirements.txt
 ADD ./main.py /back/main.py
+
 WORKDIR /back
 RUN pip install -r requirements.txt
 
