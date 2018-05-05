@@ -2,9 +2,6 @@ server:
   build: .
   dockerfile: pythonDockerfile
 
-  volumes:
-    - ./:/back
-
   working_dir: /back
 
   ports:
