@@ -3,7 +3,7 @@ server:
   dockerfile: pythonDockerfile
 
   volumes:
-    - ./server:/back
+    - ./:/back
 
   working_dir: /back
 
